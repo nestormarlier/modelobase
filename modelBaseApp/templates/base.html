@@ -1,51 +1,43 @@
-{% extends "index.html" %}
-{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  {% include "head.html" %}
+</head>
+
+<body class="hold-transition layout-top-nav">
   <div class="wrapper">
-
+    <!-- NAVBAR -->
     {% include "navbar.html" %}
+    <!-- NAVBAR -->
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
-      <div class="content-header">
-        <div class="container">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1 class="m-0 text-dark"> Top Navigation <small>Example 3.0</small></h1>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                <li class="breadcrumb-item active">Top Navigation</li>
-              </ol>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </div>
+      {% include "header.html" %}
       <!-- /.content-header -->
-
+        
       <!-- Main content -->
       <div class="content">
         <div class="container">
           <div class="row">
-
+  
             <div class="box box-default">
               <div class="box-header with-border">
                 <i class="fa fa-warning"></i>
-
+  
                 <h3 class="box-title">Alerts</h3>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
-
-                <p3>box-body in body</p3>
-
+                {% block content %}
+                <p3>Escribir aqui lo que se va a reemplazar</p3>
+                {% endblock %}
               </div>
               <!-- /.box-body -->
             </div>
             <!-- /.box -->
-
+  
           </div>
           <!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -53,7 +45,7 @@
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
+  
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Control sidebar content goes here -->
@@ -63,9 +55,11 @@
       </div>
     </aside>
     <!-- /.control-sidebar -->
-
+  
     <!-- Main Footer -->
     {% include "footer.html" %}
   </div>
   <!-- ./wrapper -->
-{% endblock %}
+</body>
+
+</html>
