@@ -1,13 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-{% include "head.html" %}
-</head>  
-{% include 'body.html' %}
+    {% include "head.html" %}
+</head>
 
-{% block body %}
-
-{% endblock %}
+<body class="hold-transition layout-top-nav">
+    {% block content %}
+      <p3>Escribir aqui lo que se va a reemplazar</p3>
+    {% endblock %}
+</body>
 
 </html>
