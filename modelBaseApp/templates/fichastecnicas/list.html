@@ -3,21 +3,17 @@
 {% block columnas %}
     <th scope="col">Id</th>
     <th scope="col">Nombre</th>
-    <th scope="col">Id Jefe</th>
     <th scope="col">Fecha de creación</th>
     <th scope="col">Opciones</th>
 {% endblock %}
-    {% block filas %}
-   {% for f in categorias %}
+   {% block filas %}
+   {% for f in fichastecnicas %}
     <tr>
       <td scope="row">
         {{f.id}}
       </td>
       <td scope="row">
         {{f.nombre}}
-      </td>
-      <td scope="row">
-        {{f.id_jefe}}
       </td>
       <td scope="row">
         {{f.created}}
