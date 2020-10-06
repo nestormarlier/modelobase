@@ -10,6 +10,7 @@
     <link rel="stylesheet" href=" {% static "fontawesome-free/css/all.min.css" %}">
     <!-- Theme style -->
     <link rel="stylesheet" href=" {% static "dist/css/adminlte.min.css" %}">
+    
     <!-- Google Font: Source Sans Pro -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
     <!-- REQUIRED SCRIPTS -->
@@ -19,3 +20,14 @@
     <script src=" {% static "plugins/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
     <!-- AdminLTE App -->
     <script src="{% static "dist/js/adminlte.min.js" %}"></script>
+    <!-- DATATABLES -->
+    <link rel="stylesheet" href="{% static "datatables/datatables-1.10.22/css/dataTables.bootstrap4.min.css" %}"/>
+    <link rel="stylesheet"
+          href="{% static "datatables/datatables-1.10.22/responsive-2.2.3/css/responsive.bootstrap4.min.css" %}"/>
+    <script src="{% static "datatables/datatables-1.10.22/js/jquery.dataTables.js" %}"></script>
+    <script src="{% static "datatables/datatables-1.10.22/js/dataTables.bootstrap4.min.js" %}"></script>
+    <script src="{% static "datatables/datatables-1.10.22/responsive-2.2.3/js/dataTables.responsive.min.js" %}"></script>
+    <script src="{% static "datatables/datatables-1.10.22/responsive-2.2.3/js/responsive.bootstrap4.min.js" %}"></script>
+    {% block head %}
+      
+    {% endblock %}
